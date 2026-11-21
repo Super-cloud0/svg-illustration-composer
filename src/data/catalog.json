@@ -1,0 +1,12 @@
+{
+  "book":       { "ru": "Книга",          "en": "Book",       "tags": ["book", "книга", "книжка", "учебник", "тетрадь", "блокнот", "notebook", "textbook"] },
+  "phone":      { "ru": "Телефон",        "en": "Phone",      "tags": ["phone", "телефон", "смартфон", "планшет", "tablet", "smartphone", "мобильный", "гаджет", "айфон"] },
+  "puzzle":     { "ru": "Пазл",           "en": "Puzzle",     "tags": ["puzzle", "пазл", "пазлы", "головоломка", "кусочек", "деталь"] },
+  "coin":       { "ru": "Монета",         "en": "Coin",       "tags": ["coin", "монета", "монетка", "монеты", "денежка", "рубль"] },
+  "headphones": { "ru": "Наушники",       "en": "Headphones", "tags": ["headphones", "наушники", "гарнитура", "headset", "earphones"] },
+  "lamp":       { "ru": "Лампа",          "en": "Lamp",       "tags": ["lamp", "лампа", "лампочка", "светильник", "торшер", "настольная лампа", "light"] },
+  "wallet":     { "ru": "Кошелёк",        "en": "Wallet",     "tags": ["wallet", "кошелек", "кошелёк", "бумажник", "портмоне", "purse"] },
+  "folder":     { "ru": "Папка",          "en": "Folder",     "tags": ["folder", "папка", "документы", "файлы", "documents", "files"] },
+  "pen":        { "ru": "Ручка",          "en": "Pen",        "tags": ["pen", "ручка", "карандаш", "перо", "pencil"] },
+  "flowers":    { "ru": "Цветы в вазе",   "en": "Flowers",    "tags": ["flowers", "цветы", "цветок", "ваза", "букет", "vase", "flower", "bouquet"] }
+}

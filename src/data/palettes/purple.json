@@ -1,0 +1,15 @@
+{
+  "id": "purple",
+  "name": "Фиолетовая",
+  "background": "#d7cdf5",
+  "map": {
+    "#d7cdf5": "#d7cdf5",
+    "#aa9bf0": "#aa9bf0",
+    "#7864d7": "#7864d7",
+    "#f9ecb0": "#f9ecb0",
+    "#f9a3aa": "#f9a3aa",
+    "#ffe3e1": "#ffe3e1",
+    "#181817": "#181817",
+    "#ffffff": "#ffffff"
+  }
+}

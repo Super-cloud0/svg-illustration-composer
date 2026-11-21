@@ -1,0 +1,15 @@
+{
+  "id": "peach",
+  "name": "Персиковая",
+  "background": "#fdd7b9",
+  "map": {
+    "#d7cdf5": "#fdd7b9",
+    "#aa9bf0": "#fac896",
+    "#7864d7": "#d27532",
+    "#f9ecb0": "#f9ecb0",
+    "#f9a3aa": "#80dada",
+    "#ffe3e1": "#beebeb",
+    "#181817": "#181817",
+    "#ffffff": "#ffffff"
+  }
+}

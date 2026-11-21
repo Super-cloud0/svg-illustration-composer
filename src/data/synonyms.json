@@ -1,0 +1,34 @@
+{
+  "_comment": "Hand-written association dictionary for Scenario 1. Each concept lists trigger words (ru/en; matched by stem) and the objects that express it.",
+  "concepts": [
+    { "label": "учёба",          "words": ["учеба", "учиться", "учебный", "обучение", "образование", "школа", "школьный", "студент", "университет", "вуз", "курс", "урок", "лекция", "экзамен", "сессия", "домашнее", "study", "education", "learning", "school", "student", "course", "lesson", "exam"], "objects": ["book", "pen", "lamp"] },
+    { "label": "знания",         "words": ["знание", "знания", "чтение", "читать", "литература", "библиотека", "мудрость", "эрудиция", "грамотность", "грамотный", "knowledge", "reading", "literacy", "library", "wisdom"], "objects": ["book"] },
+    { "label": "концентрация",   "words": ["концентрация", "сосредоточенность", "фокус", "внимание", "тишина", "погружение", "продуктивность", "продуктивный", "дедлайн", "focus", "concentration", "attention", "deep work", "productivity"], "objects": ["headphones", "lamp"] },
+    { "label": "музыка и звук",  "words": ["музыка", "звук", "аудио", "подкаст", "слушать", "плейлист", "песня", "радио", "аудиокнига", "music", "audio", "podcast", "sound", "listen"], "objects": ["headphones"] },
+    { "label": "идея",           "words": ["идея", "идеи", "озарение", "креатив", "креативность", "вдохновение", "мысль", "инсайт", "изобретение", "свет", "ночь", "вечер", "idea", "insight", "inspiration", "creative", "creativity", "light"], "objects": ["lamp"] },
+    { "label": "решение задач",  "words": ["решение", "задача", "головоломка", "логика", "мышление", "стратегия", "анализ", "проблема", "вызов", "квест", "игра", "solution", "problem", "logic", "strategy", "thinking", "challenge", "game"], "objects": ["puzzle"] },
+    { "label": "команда",        "words": ["команда", "командный", "сотрудничество", "партнерство", "совместный", "вместе", "интеграция", "синергия", "связь", "teamwork", "team", "collaboration", "partnership", "together", "integration"], "objects": ["puzzle"] },
+    { "label": "деньги",         "words": ["деньги", "денег", "денежный", "финансы", "финансовый", "финансовая", "бюджет", "оплата", "платеж", "покупка", "покупки", "расходы", "траты", "зарплата", "кэшбэк", "банк", "кредит", "налог", "money", "finance", "financial", "budget", "payment", "salary", "bank", "cashback", "tax"], "objects": ["wallet", "coin"] },
+    { "label": "сбережения",     "words": ["сбережения", "накопления", "копить", "экономия", "экономить", "инвестиции", "инвестировать", "доход", "прибыль", "капитал", "вклад", "пенсия", "savings", "save", "invest", "investment", "income", "profit", "crypto", "крипта", "криптовалюта"], "objects": ["coin", "wallet"] },
+    { "label": "цифровые сервисы", "words": ["приложение", "мобильный", "онлайн", "интернет", "цифровой", "цифровая", "digital", "соцсети", "смс", "звонок", "чат", "мессенджер", "сайт", "сервис", "технологии", "технология", "app", "online", "internet", "mobile", "technology", "online-курс"], "objects": ["phone"] },
+    { "label": "документы и порядок", "words": ["документ", "документы", "архив", "офис", "бумаги", "организация", "порядок", "проект", "отчет", "отчетность", "бухгалтерия", "делопроизводство", "карьера", "резюме", "бизнес", "менеджмент", "planning", "office", "documents", "archive", "report", "project", "career", "business", "management"], "objects": ["folder", "pen"] },
+    { "label": "письмо и подпись", "words": ["письмо", "писать", "подпись", "договор", "контракт", "заметки", "конспект", "соглашение", "заявление", "дневник", "автор", "сочинение", "writing", "write", "signature", "contract", "notes", "agreement", "journal"], "objects": ["pen", "book"] },
+    { "label": "планирование",   "words": ["план", "планирование", "планировать", "цели", "цель", "тайм-менеджмент", "расписание", "ежедневник", "календарь", "organizer", "plan", "planning", "goals", "schedule"], "objects": ["book", "pen", "folder"] },
+    { "label": "уют и отдых",    "words": ["уют", "уютный", "уютная", "дом", "домашний", "отдых", "баланс", "релакс", "весна", "лето", "праздник", "подарок", "красота", "природа", "забота", "благодарность", "настроение", "wellbeing", "ментальное", "здоровье", "home", "rest", "balance", "spring", "gift", "holiday", "beauty", "care", "relax", "mood", "health"], "objects": ["flowers"] },
+    { "label": "рост и развитие", "words": ["рост", "развитие", "саморазвитие", "прогресс", "успех", "достижение", "мотивация", "growth", "development", "progress", "success", "motivation"], "objects": ["flowers", "book"] },
+    { "label": "удалённая работа", "words": ["удаленка", "удаленная", "удаленный", "фриланс", "созвон", "встреча", "звонки", "remote", "freelance", "call", "meeting", "zoom"], "objects": ["headphones", "phone"] }
+  ],
+  "companions": {
+    "book": ["lamp", "pen"],
+    "phone": ["headphones", "puzzle"],
+    "puzzle": ["phone", "book"],
+    "coin": ["wallet", "phone"],
+    "headphones": ["phone", "flowers"],
+    "lamp": ["book", "pen"],
+    "wallet": ["coin", "phone"],
+    "folder": ["pen", "coin"],
+    "pen": ["book", "folder"],
+    "flowers": ["headphones", "book"]
+  },
+  "fallback": ["book", "lamp", "flowers"]
+}

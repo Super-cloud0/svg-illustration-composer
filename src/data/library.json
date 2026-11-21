@@ -1,0 +1,1192 @@
+{
+  "generatedAt": "2026-11-21",
+  "sizeScale": {
+    "L": 1,
+    "S": 1.997
+  },
+  "sourcePalette": [
+    "#181817",
+    "#7864d7",
+    "#aa9bf0",
+    "#d7cdf5",
+    "#f9a3aa",
+    "#f9ecb0",
+    "#ffe3e1",
+    "#ffffff"
+  ],
+  "objects": [
+    {
+      "id": "L_bg_book",
+      "key": "book",
+      "name": "Книга",
+      "nameEn": "Book",
+      "size": "L",
+      "type": "bg",
+      "file": "L_bg_book.svg",
+      "width": 1446,
+      "height": 977,
+      "tags": [
+        "book",
+        "книга",
+        "книжка",
+        "учебник",
+        "тетрадь",
+        "блокнот",
+        "notebook",
+        "textbook",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-l"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "L_bg_coin",
+      "key": "coin",
+      "name": "Монета",
+      "nameEn": "Coin",
+      "size": "L",
+      "type": "bg",
+      "file": "L_bg_coin.svg",
+      "width": 287,
+      "height": 189,
+      "tags": [
+        "coin",
+        "монета",
+        "монетка",
+        "монеты",
+        "денежка",
+        "рубль",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-l"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "L_bg_flowers",
+      "key": "flowers",
+      "name": "Цветы в вазе",
+      "nameEn": "Flowers",
+      "size": "L",
+      "type": "bg",
+      "file": "L_bg_flowers.svg",
+      "width": 591,
+      "height": 748,
+      "tags": [
+        "flowers",
+        "цветы",
+        "цветок",
+        "ваза",
+        "букет",
+        "vase",
+        "flower",
+        "bouquet",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-l"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "L_bg_folder",
+      "key": "folder",
+      "name": "Папка",
+      "nameEn": "Folder",
+      "size": "L",
+      "type": "bg",
+      "file": "L_bg_folder.svg",
+      "width": 1241,
+      "height": 659,
+      "tags": [
+        "folder",
+        "папка",
+        "документы",
+        "файлы",
+        "documents",
+        "files",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-l"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "L_bg_headphones",
+      "key": "headphones",
+      "name": "Наушники",
+      "nameEn": "Headphones",
+      "size": "L",
+      "type": "bg",
+      "file": "L_bg_headphones.svg",
+      "width": 889,
+      "height": 692,
+      "tags": [
+        "headphones",
+        "наушники",
+        "гарнитура",
+        "headset",
+        "earphones",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-l"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "L_bg_lamp",
+      "key": "lamp",
+      "name": "Лампа",
+      "nameEn": "Lamp",
+      "size": "L",
+      "type": "bg",
+      "file": "L_bg_lamp.svg",
+      "width": 946,
+      "height": 1129,
+      "tags": [
+        "lamp",
+        "лампа",
+        "лампочка",
+        "светильник",
+        "торшер",
+        "настольная лампа",
+        "light",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-l"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "L_bg_pen",
+      "key": "pen",
+      "name": "Ручка",
+      "nameEn": "Pen",
+      "size": "L",
+      "type": "bg",
+      "file": "L_bg_pen.svg",
+      "width": 509,
+      "height": 286,
+      "tags": [
+        "pen",
+        "ручка",
+        "карандаш",
+        "перо",
+        "pencil",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-l"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "L_bg_phone",
+      "key": "phone",
+      "name": "Телефон",
+      "nameEn": "Phone",
+      "size": "L",
+      "type": "bg",
+      "file": "L_bg_phone.svg",
+      "width": 797,
+      "height": 462,
+      "tags": [
+        "phone",
+        "телефон",
+        "смартфон",
+        "планшет",
+        "tablet",
+        "smartphone",
+        "мобильный",
+        "гаджет",
+        "айфон",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-l"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "L_bg_puzzle",
+      "key": "puzzle",
+      "name": "Пазл",
+      "nameEn": "Puzzle",
+      "size": "L",
+      "type": "bg",
+      "file": "L_bg_puzzle.svg",
+      "width": 545,
+      "height": 314,
+      "tags": [
+        "puzzle",
+        "пазл",
+        "пазлы",
+        "головоломка",
+        "кусочек",
+        "деталь",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-l"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "L_bg_wallet",
+      "key": "wallet",
+      "name": "Кошелёк",
+      "nameEn": "Wallet",
+      "size": "L",
+      "type": "bg",
+      "file": "L_bg_wallet.svg",
+      "width": 631,
+      "height": 397,
+      "tags": [
+        "wallet",
+        "кошелек",
+        "кошелёк",
+        "бумажник",
+        "портмоне",
+        "purse",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-l"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "L_main_book",
+      "key": "book",
+      "name": "Книга",
+      "nameEn": "Book",
+      "size": "L",
+      "type": "main",
+      "file": "L_main_book.svg",
+      "width": 1446,
+      "height": 977,
+      "tags": [
+        "book",
+        "книга",
+        "книжка",
+        "учебник",
+        "тетрадь",
+        "блокнот",
+        "notebook",
+        "textbook",
+        "главный",
+        "цветной",
+        "main",
+        "size-l"
+      ],
+      "colors": [
+        "#181817",
+        "#f9a3aa",
+        "#f9ecb0",
+        "#ffe3e1",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "L_main_coin",
+      "key": "coin",
+      "name": "Монета",
+      "nameEn": "Coin",
+      "size": "L",
+      "type": "main",
+      "file": "L_main_coin.svg",
+      "width": 287,
+      "height": 189,
+      "tags": [
+        "coin",
+        "монета",
+        "монетка",
+        "монеты",
+        "денежка",
+        "рубль",
+        "главный",
+        "цветной",
+        "main",
+        "size-l"
+      ],
+      "colors": [
+        "#181817",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "L_main_flowers",
+      "key": "flowers",
+      "name": "Цветы в вазе",
+      "nameEn": "Flowers",
+      "size": "L",
+      "type": "main",
+      "file": "L_main_flowers.svg",
+      "width": 591,
+      "height": 748,
+      "tags": [
+        "flowers",
+        "цветы",
+        "цветок",
+        "ваза",
+        "букет",
+        "vase",
+        "flower",
+        "bouquet",
+        "главный",
+        "цветной",
+        "main",
+        "size-l"
+      ],
+      "colors": [
+        "#181817",
+        "#aa9bf0",
+        "#f9a3aa",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "L_main_folder",
+      "key": "folder",
+      "name": "Папка",
+      "nameEn": "Folder",
+      "size": "L",
+      "type": "main",
+      "file": "L_main_folder.svg",
+      "width": 1241,
+      "height": 659,
+      "tags": [
+        "folder",
+        "папка",
+        "документы",
+        "файлы",
+        "documents",
+        "files",
+        "главный",
+        "цветной",
+        "main",
+        "size-l"
+      ],
+      "colors": [
+        "#181817",
+        "#f9a3aa",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "L_main_headphones",
+      "key": "headphones",
+      "name": "Наушники",
+      "nameEn": "Headphones",
+      "size": "L",
+      "type": "main",
+      "file": "L_main_headphones.svg",
+      "width": 889,
+      "height": 692,
+      "tags": [
+        "headphones",
+        "наушники",
+        "гарнитура",
+        "headset",
+        "earphones",
+        "главный",
+        "цветной",
+        "main",
+        "size-l"
+      ],
+      "colors": [
+        "#181817",
+        "#d7cdf5",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "L_main_lamp",
+      "key": "lamp",
+      "name": "Лампа",
+      "nameEn": "Lamp",
+      "size": "L",
+      "type": "main",
+      "file": "L_main_lamp.svg",
+      "width": 946,
+      "height": 1129,
+      "tags": [
+        "lamp",
+        "лампа",
+        "лампочка",
+        "светильник",
+        "торшер",
+        "настольная лампа",
+        "light",
+        "главный",
+        "цветной",
+        "main",
+        "size-l"
+      ],
+      "colors": [
+        "#181817",
+        "#d7cdf5",
+        "#f9a3aa",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "L_main_pen",
+      "key": "pen",
+      "name": "Ручка",
+      "nameEn": "Pen",
+      "size": "L",
+      "type": "main",
+      "file": "L_main_pen.svg",
+      "width": 509,
+      "height": 286,
+      "tags": [
+        "pen",
+        "ручка",
+        "карандаш",
+        "перо",
+        "pencil",
+        "главный",
+        "цветной",
+        "main",
+        "size-l"
+      ],
+      "colors": [
+        "#181817",
+        "#d7cdf5",
+        "#f9a3aa",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "L_main_phone",
+      "key": "phone",
+      "name": "Телефон",
+      "nameEn": "Phone",
+      "size": "L",
+      "type": "main",
+      "file": "L_main_phone.svg",
+      "width": 797,
+      "height": 462,
+      "tags": [
+        "phone",
+        "телефон",
+        "смартфон",
+        "планшет",
+        "tablet",
+        "smartphone",
+        "мобильный",
+        "гаджет",
+        "айфон",
+        "главный",
+        "цветной",
+        "main",
+        "size-l"
+      ],
+      "colors": [
+        "#181817",
+        "#7864d7",
+        "#d7cdf5",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "L_main_puzzle",
+      "key": "puzzle",
+      "name": "Пазл",
+      "nameEn": "Puzzle",
+      "size": "L",
+      "type": "main",
+      "file": "L_main_puzzle.svg",
+      "width": 545,
+      "height": 314,
+      "tags": [
+        "puzzle",
+        "пазл",
+        "пазлы",
+        "головоломка",
+        "кусочек",
+        "деталь",
+        "главный",
+        "цветной",
+        "main",
+        "size-l"
+      ],
+      "colors": [
+        "#181817",
+        "#f9a3aa",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "L_main_wallet",
+      "key": "wallet",
+      "name": "Кошелёк",
+      "nameEn": "Wallet",
+      "size": "L",
+      "type": "main",
+      "file": "L_main_wallet.svg",
+      "width": 631,
+      "height": 397,
+      "tags": [
+        "wallet",
+        "кошелек",
+        "кошелёк",
+        "бумажник",
+        "портмоне",
+        "purse",
+        "главный",
+        "цветной",
+        "main",
+        "size-l"
+      ],
+      "colors": [
+        "#181817",
+        "#d7cdf5",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "S_bg_book",
+      "key": "book",
+      "name": "Книга",
+      "nameEn": "Book",
+      "size": "S",
+      "type": "bg",
+      "file": "S_bg_book.svg",
+      "width": 723,
+      "height": 489,
+      "tags": [
+        "book",
+        "книга",
+        "книжка",
+        "учебник",
+        "тетрадь",
+        "блокнот",
+        "notebook",
+        "textbook",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-s"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "S_bg_coin",
+      "key": "coin",
+      "name": "Монета",
+      "nameEn": "Coin",
+      "size": "S",
+      "type": "bg",
+      "file": "S_bg_coin.svg",
+      "width": 153,
+      "height": 101,
+      "tags": [
+        "coin",
+        "монета",
+        "монетка",
+        "монеты",
+        "денежка",
+        "рубль",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-s"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "S_bg_flowers",
+      "key": "flowers",
+      "name": "Цветы в вазе",
+      "nameEn": "Flowers",
+      "size": "S",
+      "type": "bg",
+      "file": "S_bg_flowers.svg",
+      "width": 324,
+      "height": 409,
+      "tags": [
+        "flowers",
+        "цветы",
+        "цветок",
+        "ваза",
+        "букет",
+        "vase",
+        "flower",
+        "bouquet",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-s"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "S_bg_folder",
+      "key": "folder",
+      "name": "Папка",
+      "nameEn": "Folder",
+      "size": "S",
+      "type": "bg",
+      "file": "S_bg_folder.svg",
+      "width": 621,
+      "height": 330,
+      "tags": [
+        "folder",
+        "папка",
+        "документы",
+        "файлы",
+        "documents",
+        "files",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-s"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "S_bg_headphones",
+      "key": "headphones",
+      "name": "Наушники",
+      "nameEn": "Headphones",
+      "size": "S",
+      "type": "bg",
+      "file": "S_bg_headphones.svg",
+      "width": 445,
+      "height": 346,
+      "tags": [
+        "headphones",
+        "наушники",
+        "гарнитура",
+        "headset",
+        "earphones",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-s"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "S_bg_lamp",
+      "key": "lamp",
+      "name": "Лампа",
+      "nameEn": "Lamp",
+      "size": "S",
+      "type": "bg",
+      "file": "S_bg_lamp.svg",
+      "width": 473,
+      "height": 565,
+      "tags": [
+        "lamp",
+        "лампа",
+        "лампочка",
+        "светильник",
+        "торшер",
+        "настольная лампа",
+        "light",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-s"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "S_bg_pen",
+      "key": "pen",
+      "name": "Ручка",
+      "nameEn": "Pen",
+      "size": "S",
+      "type": "bg",
+      "file": "S_bg_pen.svg",
+      "width": 255,
+      "height": 143,
+      "tags": [
+        "pen",
+        "ручка",
+        "карандаш",
+        "перо",
+        "pencil",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-s"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "S_bg_phone",
+      "key": "phone",
+      "name": "Телефон",
+      "nameEn": "Phone",
+      "size": "S",
+      "type": "bg",
+      "file": "S_bg_phone.svg",
+      "width": 399,
+      "height": 231,
+      "tags": [
+        "phone",
+        "телефон",
+        "смартфон",
+        "планшет",
+        "tablet",
+        "smartphone",
+        "мобильный",
+        "гаджет",
+        "айфон",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-s"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "S_bg_puzzle",
+      "key": "puzzle",
+      "name": "Пазл",
+      "nameEn": "Puzzle",
+      "size": "S",
+      "type": "bg",
+      "file": "S_bg_puzzle.svg",
+      "width": 273,
+      "height": 157,
+      "tags": [
+        "puzzle",
+        "пазл",
+        "пазлы",
+        "головоломка",
+        "кусочек",
+        "деталь",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-s"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "S_bg_wallet",
+      "key": "wallet",
+      "name": "Кошелёк",
+      "nameEn": "Wallet",
+      "size": "S",
+      "type": "bg",
+      "file": "S_bg_wallet.svg",
+      "width": 316,
+      "height": 199,
+      "tags": [
+        "wallet",
+        "кошелек",
+        "кошелёк",
+        "бумажник",
+        "портмоне",
+        "purse",
+        "фоновый",
+        "монохром",
+        "background",
+        "size-s"
+      ],
+      "colors": [
+        "#7864d7",
+        "#d7cdf5"
+      ]
+    },
+    {
+      "id": "S_main_book",
+      "key": "book",
+      "name": "Книга",
+      "nameEn": "Book",
+      "size": "S",
+      "type": "main",
+      "file": "S_main_book.svg",
+      "width": 723,
+      "height": 489,
+      "tags": [
+        "book",
+        "книга",
+        "книжка",
+        "учебник",
+        "тетрадь",
+        "блокнот",
+        "notebook",
+        "textbook",
+        "главный",
+        "цветной",
+        "main",
+        "size-s"
+      ],
+      "colors": [
+        "#181817",
+        "#f9a3aa",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "S_main_coin",
+      "key": "coin",
+      "name": "Монета",
+      "nameEn": "Coin",
+      "size": "S",
+      "type": "main",
+      "file": "S_main_coin.svg",
+      "width": 153,
+      "height": 101,
+      "tags": [
+        "coin",
+        "монета",
+        "монетка",
+        "монеты",
+        "денежка",
+        "рубль",
+        "главный",
+        "цветной",
+        "main",
+        "size-s"
+      ],
+      "colors": [
+        "#181817",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "S_main_flowers",
+      "key": "flowers",
+      "name": "Цветы в вазе",
+      "nameEn": "Flowers",
+      "size": "S",
+      "type": "main",
+      "file": "S_main_flowers.svg",
+      "width": 324,
+      "height": 409,
+      "tags": [
+        "flowers",
+        "цветы",
+        "цветок",
+        "ваза",
+        "букет",
+        "vase",
+        "flower",
+        "bouquet",
+        "главный",
+        "цветной",
+        "main",
+        "size-s"
+      ],
+      "colors": [
+        "#181817",
+        "#aa9bf0",
+        "#f9a3aa",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "S_main_folder",
+      "key": "folder",
+      "name": "Папка",
+      "nameEn": "Folder",
+      "size": "S",
+      "type": "main",
+      "file": "S_main_folder.svg",
+      "width": 621,
+      "height": 330,
+      "tags": [
+        "folder",
+        "папка",
+        "документы",
+        "файлы",
+        "documents",
+        "files",
+        "главный",
+        "цветной",
+        "main",
+        "size-s"
+      ],
+      "colors": [
+        "#181817",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "S_main_headphones",
+      "key": "headphones",
+      "name": "Наушники",
+      "nameEn": "Headphones",
+      "size": "S",
+      "type": "main",
+      "file": "S_main_headphones.svg",
+      "width": 445,
+      "height": 346,
+      "tags": [
+        "headphones",
+        "наушники",
+        "гарнитура",
+        "headset",
+        "earphones",
+        "главный",
+        "цветной",
+        "main",
+        "size-s"
+      ],
+      "colors": [
+        "#181817",
+        "#d7cdf5",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "S_main_lamp",
+      "key": "lamp",
+      "name": "Лампа",
+      "nameEn": "Lamp",
+      "size": "S",
+      "type": "main",
+      "file": "S_main_lamp.svg",
+      "width": 473,
+      "height": 565,
+      "tags": [
+        "lamp",
+        "лампа",
+        "лампочка",
+        "светильник",
+        "торшер",
+        "настольная лампа",
+        "light",
+        "главный",
+        "цветной",
+        "main",
+        "size-s"
+      ],
+      "colors": [
+        "#181817",
+        "#d7cdf5",
+        "#f9a3aa",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "S_main_pen",
+      "key": "pen",
+      "name": "Ручка",
+      "nameEn": "Pen",
+      "size": "S",
+      "type": "main",
+      "file": "S_main_pen.svg",
+      "width": 255,
+      "height": 143,
+      "tags": [
+        "pen",
+        "ручка",
+        "карандаш",
+        "перо",
+        "pencil",
+        "главный",
+        "цветной",
+        "main",
+        "size-s"
+      ],
+      "colors": [
+        "#181817",
+        "#f9a3aa",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "S_main_phone",
+      "key": "phone",
+      "name": "Телефон",
+      "nameEn": "Phone",
+      "size": "S",
+      "type": "main",
+      "file": "S_main_phone.svg",
+      "width": 399,
+      "height": 231,
+      "tags": [
+        "phone",
+        "телефон",
+        "смартфон",
+        "планшет",
+        "tablet",
+        "smartphone",
+        "мобильный",
+        "гаджет",
+        "айфон",
+        "главный",
+        "цветной",
+        "main",
+        "size-s"
+      ],
+      "colors": [
+        "#181817",
+        "#7864d7",
+        "#d7cdf5",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "S_main_puzzle",
+      "key": "puzzle",
+      "name": "Пазл",
+      "nameEn": "Puzzle",
+      "size": "S",
+      "type": "main",
+      "file": "S_main_puzzle.svg",
+      "width": 273,
+      "height": 157,
+      "tags": [
+        "puzzle",
+        "пазл",
+        "пазлы",
+        "головоломка",
+        "кусочек",
+        "деталь",
+        "главный",
+        "цветной",
+        "main",
+        "size-s"
+      ],
+      "colors": [
+        "#181817",
+        "#d7cdf5",
+        "#f9a3aa",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "S_main_wallet",
+      "key": "wallet",
+      "name": "Кошелёк",
+      "nameEn": "Wallet",
+      "size": "S",
+      "type": "main",
+      "file": "S_main_wallet.svg",
+      "width": 316,
+      "height": 199,
+      "tags": [
+        "wallet",
+        "кошелек",
+        "кошелёк",
+        "бумажник",
+        "портмоне",
+        "purse",
+        "главный",
+        "цветной",
+        "main",
+        "size-s"
+      ],
+      "colors": [
+        "#181817",
+        "#d7cdf5",
+        "#f9ecb0",
+        "#ffffff"
+      ]
+    }
+  ],
+  "decor": [
+    {
+      "id": "confetti",
+      "name": "Конфетти",
+      "file": "decor/confetti.svg",
+      "width": 1000,
+      "height": 1000,
+      "colors": [
+        "#7864d7",
+        "#aa9bf0",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "waves",
+      "name": "Волна",
+      "file": "decor/waves.svg",
+      "width": 1000,
+      "height": 1000,
+      "colors": [
+        "#7864d7",
+        "#aa9bf0"
+      ]
+    }
+  ]
+}

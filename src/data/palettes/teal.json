@@ -1,0 +1,15 @@
+{
+  "id": "teal",
+  "name": "Бирюзовая",
+  "background": "#beebeb",
+  "map": {
+    "#d7cdf5": "#beebeb",
+    "#aa9bf0": "#80dada",
+    "#7864d7": "#5abebe",
+    "#f9ecb0": "#ffd4f2",
+    "#f9a3aa": "#6d7bfc",
+    "#ffe3e1": "#b6c6fe",
+    "#181817": "#181817",
+    "#ffffff": "#ffffff"
+  }
+}

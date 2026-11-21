@@ -1,0 +1,29 @@
+{
+  "name": "svg-illustration-composer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "library": "tsx scripts/build-library.ts",
+    "dev": "npm run library && vite",
+    "build": "npm run library && tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "examples": "npm run library && tsx scripts/make-examples.ts",
+    "figma:export": "node scripts/figma-export.mjs"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.4",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3",
+    "vite": "6.0.7",
+    "vitest": "2.1.8"
+  }
+}

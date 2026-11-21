@@ -1,0 +1,8 @@
+.env
+node_modules/
+dist/
+public/library/
+*.log
+.claude/
+PROMPT.txt
+*.tsbuildinfo

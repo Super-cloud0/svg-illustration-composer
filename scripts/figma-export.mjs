@@ -31,8 +31,6 @@ const OBJECTS = {
 };
 // L book has a small piece that lives outside its group in Figma.
 const BOOK_EXTRA = { L_main: '21:29952', L_bg: '24:6272' };
-// Background decor frames (scheme backgrounds with confetti / lines).
-const DECOR = { confetti: '21:25258', waves: '21:25399' };
 
 async function api(url) {
   for (let i = 1; ; i++) {
@@ -89,7 +87,7 @@ function mergeSvg(mainSvg, extraSvg, dx, dy) {
 async function main() {
   const assetsDir = path.join(ROOT, 'assets');
   const refDir = path.join(ROOT, 'reference');
-  fs.mkdirSync(path.join(assetsDir, 'decor'), { recursive: true });
+  fs.mkdirSync(assetsDir, { recursive: true });
   fs.mkdirSync(refDir, { recursive: true });
 
   const refsOnly = process.argv.includes('--refs-only');
@@ -102,7 +100,6 @@ async function exportAssets(assetsDir) {
   for (const [size, types] of Object.entries(OBJECTS))
     for (const [type, objs] of Object.entries(types))
       for (const [name, id] of Object.entries(objs)) jobs.push({ id, file: path.join(assetsDir, `${size}_${type}_${name}.svg`) });
-  for (const [name, id] of Object.entries(DECOR)) jobs.push({ id, file: path.join(assetsDir, 'decor', `${name}.svg`) });
   const extraIds = Object.values(BOOK_EXTRA);
 
   const urls = await exportNodes([...jobs.map((j) => j.id), ...extraIds], 'svg');

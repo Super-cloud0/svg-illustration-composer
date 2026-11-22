@@ -485,10 +485,6 @@ input[type='range'] {
 .stage-svg .obj {
   cursor: move;
 }
-.stage-svg .outside {
-  fill: var(--stage);
-  opacity: 0.82;
-}
 .stage-svg .frame {
   stroke: rgba(30, 20, 60, 0.25);
 }

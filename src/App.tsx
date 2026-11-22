@@ -39,7 +39,7 @@ const writeLS = (k: string, v: string | null) => {
   }
 };
 
-const INITIAL: Composition = { width: 1200, height: 630, size: 'L', paletteId: 'purple', scale: 0.4, decor: 'none', items: [] };
+const INITIAL: Composition = { width: 1200, height: 630, size: 'L', paletteId: 'purple', scale: 0.4, items: [] };
 
 export default function App() {
   const loader = useLibraryLoader();

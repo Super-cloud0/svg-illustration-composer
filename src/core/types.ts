@@ -1,7 +1,6 @@
 export type SizeSet = 'L' | 'S';
 export type Variant = 'main' | 'bg';
 export type TemplateId = 'title' | 'offset' | 'collected';
-export type DecorId = 'none' | 'confetti' | 'waves';
 
 /** One entry of library.json — metadata about a single source SVG file. */
 export interface LibraryObject {
@@ -19,22 +18,12 @@ export interface LibraryObject {
   custom?: boolean; // uploaded by the user at runtime
 }
 
-export interface DecorAsset {
-  id: Exclude<DecorId, 'none'>;
-  name: string;
-  file: string;
-  width: number;
-  height: number;
-  colors: string[];
-}
-
 export interface Library {
   generatedAt: string;
   /** Uniform per-set factor that brings each set to the same visual footprint (L = 1). */
   sizeScale: Record<SizeSet, number>;
   sourcePalette: string[];
   objects: LibraryObject[];
-  decor: DecorAsset[];
 }
 
 /** Parsed SVG ready to be embedded: inner markup + viewBox. */
@@ -59,7 +48,6 @@ export interface Composition {
   paletteId: string;
   /** One scale factor for every object (in L units) — keeps relative proportions. */
   scale: number;
-  decor: DecorId;
   items: CompositionItem[]; // paint order: first = back
 }
 

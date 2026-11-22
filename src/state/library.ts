@@ -22,7 +22,7 @@ export function useLibraryLoader() {
   const [state, setState] = useState<{ ready: boolean; loaded: number; error?: string }>({ ready: false, loaded: 0 });
   useEffect(() => {
     let loaded = 0;
-    const files = [...LIBRARY.objects.map((o) => o.file), ...LIBRARY.decor.map((d) => d.file)];
+    const files = LIBRARY.objects.map((o) => o.file);
     Promise.all(
       files.map((f) =>
         fetchSvg(f).then(() => {
@@ -34,7 +34,7 @@ export function useLibraryLoader() {
       .then(() => setState({ ready: true, loaded }))
       .catch((e: Error) => setState({ ready: false, loaded, error: e.message }));
   }, []);
-  return { ...state, total: LIBRARY.objects.length + LIBRARY.decor.length };
+  return { ...state, total: LIBRARY.objects.length };
 }
 
 /** Library objects including user uploads (kept in memory for the session). */
@@ -82,7 +82,6 @@ export function makeResolver(all: LibraryObject[]): AssetResolver {
     entry: (item: CompositionItem, comp: Composition) => findEntry(all, item.key, item.variant, comp.size),
     svg: (file) => svgCache.get(file),
     unit: (entry) => (entry.custom ? 1 : LIBRARY.sizeScale[entry.size]),
-    decor: (id) => LIBRARY.decor.find((d) => d.id === id),
   };
 }
 

@@ -12,7 +12,7 @@ import { autoLayout } from '../src/core/layout';
 import { matchPhrase, parseComponents, promoteBackground, type Pick } from '../src/core/matching';
 import { BUILTIN_PALETTES } from '../src/core/palettes';
 import { parseSvg } from '../src/core/svg';
-import type { Composition, DecorId, Library, SizeSet, SvgAsset, TemplateId } from '../src/core/types';
+import type { Composition, Library, SizeSet, SvgAsset, TemplateId } from '../src/core/types';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const LIB = libraryJson as Library;
@@ -25,7 +25,6 @@ const resolver: AssetResolver = {
   entry: (item, comp) => LIB.objects.find((o) => o.key === item.key && o.type === item.variant && o.size === comp.size),
   svg: svgOf,
   unit: (e) => LIB.sizeScale[e.size],
-  decor: (id) => LIB.decor.find((d) => d.id === id),
 };
 
 interface Spec {
@@ -37,7 +36,6 @@ interface Spec {
   H: number;
   size: SizeSet;
   palette: string;
-  decor: DecorId;
   seed?: number;
 }
 
@@ -61,7 +59,6 @@ export function compose(s: Spec): { comp: Composition; picks: Pick[] } {
       size: s.size,
       paletteId: s.palette,
       scale: res.scale,
-      decor: s.decor,
       items: res.items.map((it, i) => ({ ...it, uid: `i${i}` })),
     },
   };
@@ -75,9 +72,9 @@ function render(spec: Spec) {
 }
 
 const EXAMPLES: Spec[] = [
-  { name: '01_metaphor_ucheba-i-koncentraciya', scenario: 'metaphor', input: 'учёба и концентрация', template: 'title', W: 1200, H: 630, size: 'L', palette: 'purple', decor: 'none' },
-  { name: '02_metaphor_finansovaya-gramotnost', scenario: 'metaphor', input: 'финансовая грамотность', template: 'collected', W: 1200, H: 1200, size: 'L', palette: 'peach', decor: 'waves' },
-  { name: '03_components_phone-headphones-bg-flowers', scenario: 'components', input: 'телефон, наушники, фоновые цветы', template: 'offset', W: 1080, H: 1350, size: 'S', palette: 'teal', decor: 'confetti', seed: 1 },
+  { name: '01_metaphor_ucheba-i-koncentraciya', scenario: 'metaphor', input: 'учёба и концентрация', template: 'title', W: 1200, H: 630, size: 'L', palette: 'purple' },
+  { name: '02_metaphor_finansovaya-gramotnost', scenario: 'metaphor', input: 'финансовая грамотность', template: 'collected', W: 1200, H: 1200, size: 'L', palette: 'peach' },
+  { name: '03_components_phone-headphones-bg-flowers', scenario: 'components', input: 'телефон, наушники, фоновые цветы', template: 'offset', W: 1080, H: 1350, size: 'S', palette: 'teal', seed: 1 },
 ];
 
 async function main() {
@@ -103,7 +100,7 @@ async function main() {
       for (const [scenario, input] of inputs) {
         let x = 0;
         for (const template of ['title', 'offset', 'collected'] as TemplateId[]) {
-          const { svg } = render({ name: '', scenario, input, template, W, H, size: 'L', palette: 'purple', decor: 'none' });
+          const { svg } = render({ name: '', scenario, input, template, W, H, size: 'L', palette: 'purple' });
           const inner = svg.replace(/^<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '');
           tiles.push(`<svg x="${x}" y="${y}" width="${cellW}" height="${cellH}" viewBox="0 0 ${W} ${H}">${inner}</svg>`);
           x += cellW + 8;
@@ -126,7 +123,7 @@ async function main() {
     lines.push(
       `### ${spec.name}\n` +
         `- Сценарий: ${spec.scenario === 'metaphor' ? 'метафора' : 'компоненты'} — «${spec.input}»\n` +
-        `- Шаблон: ${spec.template}, формат ${spec.W}×${spec.H}, размер ${spec.size}, палитра ${spec.palette}, декор ${spec.decor}, масштаб ${Math.round(comp.scale * 100)}%\n` +
+        `- Шаблон: ${spec.template}, формат ${spec.W}×${spec.H}, размер ${spec.size}, палитра ${spec.palette}, масштаб ${Math.round(comp.scale * 100)}%\n` +
         picks.map((p) => `- ${p.key}${p.variant === 'bg' ? ' (фон)' : ''}: ${p.reasons.join('; ')}`).join('\n') +
         `\n\n![${spec.name}](${spec.name}.png)\n`,
     );

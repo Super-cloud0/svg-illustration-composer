@@ -1,5 +1,5 @@
 import { memo, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import { decorTransform, itemTransform, type AssetResolver } from '../core/export';
+import { itemTransform, type AssetResolver } from '../core/export';
 import { recolorMarkup } from '../core/recolor';
 import type { Composition, Palette, TemplateId } from '../core/types';
 import { updateItem } from '../state/store';
@@ -118,9 +118,6 @@ export function Canvas({ comp, palette, resolver, selected, template, showGuide,
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [onChange, onCommit]);
 
-  const decor = comp.decor !== 'none' ? resolver.decor(comp.decor) : undefined;
-  const decorSvg = decor && resolver.svg(decor.file);
-
   const sel = comp.items.find((i) => i.uid === selected);
   const selEntry = sel && resolver.entry(sel, comp);
   const selSize = selEntry && {
@@ -142,31 +139,29 @@ export function Canvas({ comp, palette, resolver, selected, template, showGuide,
         onPointerDown={() => onSelect(null)}
         className="stage-svg"
       >
+        <defs>
+          <clipPath id="editor-canvas-clip">
+            <rect x={0} y={0} width={W} height={H} />
+          </clipPath>
+        </defs>
         <rect x={0} y={0} width={W} height={H} fill={palette.background} />
-        {decor && decorSvg && (
-          <g transform={decorTransform(decor, W, H)} pointerEvents="none" dangerouslySetInnerHTML={{ __html: recolored(decor.file, decorSvg.inner, palette) }} />
-        )}
-        {comp.items.map((it) => {
-          const entry = resolver.entry(it, comp);
-          const svg = entry && resolver.svg(entry.file);
-          if (!entry || !svg) return null;
-          return (
-            <ObjectLayer
-              key={it.uid}
-              uid={it.uid}
-              markup={recolored(entry.file, svg.inner, palette)}
-              transform={itemTransform(it, svg, comp.scale * resolver.unit(entry))}
-              onDown={onObjectDown}
-            />
-          );
-        })}
-        {/* Dim everything outside the frame: shows bleed without clipping it away. */}
-        <path
-          d={`M${-margin} ${-margin}h${vbW}v${vbH}h${-vbW}z M0 0v${H}h${W}v${-H}z`}
-          fillRule="evenodd"
-          className="outside"
-          pointerEvents="none"
-        />
+        {/* Same as the export: objects are clipped to the frame, nothing renders outside it. */}
+        <g clipPath="url(#editor-canvas-clip)">
+          {comp.items.map((it) => {
+            const entry = resolver.entry(it, comp);
+            const svg = entry && resolver.svg(entry.file);
+            if (!entry || !svg) return null;
+            return (
+              <ObjectLayer
+                key={it.uid}
+                uid={it.uid}
+                markup={recolored(entry.file, svg.inner, palette)}
+                transform={itemTransform(it, svg, comp.scale * resolver.unit(entry))}
+                onDown={onObjectDown}
+              />
+            );
+          })}
+        </g>
         <rect x={0} y={0} width={W} height={H} fill="none" className="frame" strokeWidth={px} pointerEvents="none" />
         {showGuide && template === 'title' && (
           <g pointerEvents="none" className="guide">

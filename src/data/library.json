@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21",
+  "generatedAt": "2026-11-22",
   "sizeScale": {
     "L": 1,
     "S": 1.997
@@ -1161,31 +1161,6 @@
         "#d7cdf5",
         "#f9ecb0",
         "#ffffff"
-      ]
-    }
-  ],
-  "decor": [
-    {
-      "id": "confetti",
-      "name": "Конфетти",
-      "file": "decor/confetti.svg",
-      "width": 1000,
-      "height": 1000,
-      "colors": [
-        "#7864d7",
-        "#aa9bf0",
-        "#ffffff"
-      ]
-    },
-    {
-      "id": "waves",
-      "name": "Волна",
-      "file": "decor/waves.svg",
-      "width": 1000,
-      "height": 1000,
-      "colors": [
-        "#7864d7",
-        "#aa9bf0"
       ]
     }
   ]

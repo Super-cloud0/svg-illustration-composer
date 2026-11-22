@@ -19,7 +19,6 @@ const resolver: AssetResolver = {
   entry: (item, comp) => entry(`${comp.size}_${item.variant}_${item.key}.svg`),
   svg: (file) => svgs[file],
   unit: (e) => (e.size === 'S' ? 2 : 1),
-  decor: () => undefined,
 };
 const comp: Composition = {
   width: 1200,
@@ -27,7 +26,6 @@ const comp: Composition = {
   size: 'L',
   paletteId: 'peach',
   scale: 0.5,
-  decor: 'none',
   items: [
     { uid: 'a', key: 'flowers', variant: 'bg', x: 300, y: 200, rotation: 0 },
     { uid: 'b', key: 'book', variant: 'main', x: 600, y: 350, rotation: 0 },
@@ -45,6 +43,18 @@ describe('buildSvg', () => {
     expect(out).toContain('<rect id="background" width="1200" height="630" fill="#fdd7b9"/>');
     expect(out).not.toMatch(/<image|data:image/);
     expect(out.trim().endsWith('</svg>')).toBe(true);
+  });
+
+  it('clips all objects to the canvas frame and draws only a flat palette background', () => {
+    expect(out).toContain('<clipPath id="canvas-clip"><rect width="1200" height="630"/></clipPath>');
+    expect(out).toContain('<g id="objects" clip-path="url(#canvas-clip)">');
+    // every object group sits inside the clipped wrapper
+    const body = out.slice(out.indexOf('<g id="objects"'), out.lastIndexOf('</svg>'));
+    expect((body.match(/data-source=/g) ?? []).length).toBe(3);
+    expect(out.indexOf('<rect id="background"')).toBeLessThan(out.indexOf('<g id="objects"'));
+    // nothing but the background rect and library objects: no extra shapes before the objects
+    const head = out.slice(0, out.indexOf('<g id="objects"'));
+    expect(head).not.toMatch(/<path|<line|<circle|<ellipse|<polygon/);
   });
 
   it('wraps every object into one named group with a transform, in paint order', () => {

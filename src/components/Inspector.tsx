@@ -1,5 +1,5 @@
 import type { AssetResolver } from '../core/export';
-import type { Composition, DecorId } from '../core/types';
+import type { Composition } from '../core/types';
 import { moveLayer, updateItem } from '../state/store';
 
 interface Props {
@@ -16,12 +16,6 @@ interface Props {
   onScale(scale: number, transient: boolean): void;
   onShowGuide(v: boolean): void;
 }
-
-const DECOR: { id: DecorId; name: string }[] = [
-  { id: 'none', name: 'Без декора' },
-  { id: 'confetti', name: 'Конфетти' },
-  { id: 'waves', name: 'Волна' },
-];
 
 export function Inspector(p: Props) {
   const { comp, resolver, selected } = p;
@@ -116,14 +110,6 @@ export function Inspector(p: Props) {
           {hintS && <b> На таком масштабе лучше смотрится размер S.</b>}
           {hintL && <b> На таком масштабе лучше смотрится размер L.</b>}
         </p>
-        <div className="label">Декор фона</div>
-        <div className="segmented full">
-          {DECOR.map((d) => (
-            <button key={d.id} className={comp.decor === d.id ? 'on' : ''} onClick={() => p.onChange({ ...comp, decor: d.id })}>
-              {d.name}
-            </button>
-          ))}
-        </div>
         <label className="check">
           <input type="checkbox" checked={p.showGuide} onChange={(e) => p.onShowGuide(e.target.checked)} /> Показывать зону заголовка
         </label>
